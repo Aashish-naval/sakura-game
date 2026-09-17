@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sakura Village — The Fading Spring</title> (initial commit: sakura game with full code and readme)
+<title>Sakura Village — The Fading Spring</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
   .charm-row{display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap}
   .charm-count{font-size:11px;color:var(--ink2);margin-left:2px;letter-spacing:.03em}
   .sigil{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);font-family:'Shippori Mincho',serif;font-size:13px;color:rgba(43,37,33,.28);background:#f3ecdc}
-  .sigil.lit{background:var(--sakura2);border-color:var(--sakura2);color:#fdf6ef} (initial commit: sakura game with full code and readme)
+  .sigil.lit{background:var(--sakura2);border-color:var(--sakura2);color:#fdf6ef}
 
   .tr{top:18px;right:18px;display:flex;flex-direction:column;align-items:flex-end;gap:7px}
   .icon-btn{pointer-events:auto;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:var(--ink2);transition:color .15s}
@@ -66,7 +66,7 @@
 
   .prompt{left:50%;bottom:118px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:9px 16px;animation:rise .18s ease-out}
   .prompt .key{min-width:26px;height:26px;font-size:13px}
-  .mouse-hint{left:50%;bottom:80px;transform:translateX(-50%);font-size:11.5px;letter-spacing:.12em;color:rgba(247,242,231,.92);text-shadow:0 1px 6px rgba(0,0,0,.45)} (initial commit: sakura game with full code and readme)
+  .mouse-hint{left:50%;bottom:80px;transform:translateX(-50%);font-size:11.5px;letter-spacing:.12em;color:rgba(247,242,231,.92);text-shadow:0 1px 6px rgba(0,0,0,.45)}
 
   .clock{right:18px;bottom:18px;display:flex;flex-direction:column;align-items:center;gap:7px;padding:11px 13px 9px}
   .dial{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(43,37,33,.45);position:relative;background:#fbf7ee}
@@ -122,12 +122,12 @@
   .pause-panel{width:392px;max-height:92vh;overflow:auto;padding:30px 32px 26px}
   .pause-panel h2{font-family:'Shippori Mincho',serif;font-size:25px;font-weight:700;text-align:center}
   .pause-jp{text-align:center;font-size:11px;letter-spacing:.5em;color:var(--sakura2);margin:5px 0 20px}
-  .menu{display:flex;flex-direction:column;gap:9px} (initial commit: sakura game with full code and readme)
+  .menu{display:flex;flex-direction:column;gap:9px}
   .btn{pointer-events:auto;cursor:pointer;font-family:'Zen Kaku Gothic New',sans-serif;font-size:14px;letter-spacing:.06em;padding:11px 18px;background:transparent;border:1.5px solid var(--ink);color:var(--ink);border-radius:8px;transition:all .15s}
   .btn:hover{background:var(--ink);color:var(--washi);transform:translateY(-1px)}
   .btn.primary{background:var(--ink);color:var(--washi)}
   .btn.primary:hover{background:var(--sakura2);border-color:var(--sakura2)}
-  @keyframes chap{0%{opacity:0}14%{opacity:1}80%{opacity:1}100%{opacity:0}} (initial commit: sakura game with full code and readme)
+  @keyframes chap{0%{opacity:0}14%{opacity:1}80%{opacity:1}100%{opacity:0}}
 </style>
 </head>
 <body>
@@ -163,7 +163,7 @@ function renderSteps(done, bad){
     `<div class="${i < done ? 'ok' : (i === done && bad ? 'bad' : '')}">${i < done ? '✓ ' : ''}${s}${i === done && bad ? ' ✗' : ''}</div>`
   ).join('');
 }
-function showBootFailure(lines){ (initial commit: sakura game with full code and readme)
+function showBootFailure(lines){
   const esc = (s) => String(s).replace(/</g, '&lt;');
   document.getElementById('root').innerHTML = `
     <div class="boot"><div class="boot-inner">
@@ -176,7 +176,7 @@ function showBootFailure(lines){ (initial commit: sakura game with full code and
         sv-systems.js, sv-ui.js, sv-main.js. Press F12 → Console for the detailed error.</div>
       </div>
       <div class="boot-tip">If a file was copied incompletely, re-copy just that one file —
-      the list above tells you which step failed.</div> (initial commit: sakura game with full code and readme)
+      the list above tells you which step failed.</div>
     </div></div>`;
 }
 const ENGINE_CDNS = [
@@ -241,4 +241,4 @@ window.addEventListener('error', (e) => {
 });
 </script>
 </body>
-</html> (initial commit: sakura game with full code and readme)
+</html>
