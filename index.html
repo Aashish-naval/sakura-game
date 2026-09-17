@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-<title>Sakura Village — a cozy 3D village stroll</title>
-=======
 <title>Sakura Village — The Fading Spring</title>
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,33 +20,23 @@
   #app canvas{display:block}
   .serif{font-family:'Shippori Mincho',serif}
 
-<<<<<<< HEAD
-  /* ---------- boot ---------- */
-=======
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
   .boot{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#232a1e;color:var(--washi);z-index:99}
   .boot-inner{text-align:center;max-width:640px;padding:24px}
   .boot-mark{width:64px;height:64px;margin:0 auto 18px;background:var(--seal);border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Shippori Mincho',serif;font-size:36px;color:#f9f4ea}
   .boot-title{font-family:'Shippori Mincho',serif;font-size:24px;letter-spacing:.08em}
   .boot-sub{margin-top:8px;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:rgba(247,242,231,.55)}
-<<<<<<< HEAD
-=======
   .boot-steps{margin-top:18px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,242,231,.42)}
   .boot-steps div{padding:2.5px 0}
   .boot-steps .ok{color:#a8d8a0}
   .boot-steps .bad{color:#e8907e}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
   .boot-error{max-width:560px;margin:20px auto 0;font-size:11.5px;line-height:1.65;color:rgba(247,242,231,.55);text-align:left}
   .boot-error div{padding:5px 0;border-bottom:1px solid rgba(255,255,255,.09);word-break:break-word}
   .boot-error div:last-child{border-bottom:none;color:rgba(247,242,231,.78)}
   .boot-tip{margin-top:16px;font-size:11.5px;line-height:1.6;color:#e8b09e}
-<<<<<<< HEAD
 
   /* ---------- HUD ---------- */
-=======
   #svToast{position:fixed;left:14px;bottom:14px;z-index:200;background:#3a2622;color:#ffd9cf;padding:10px 14px;border-radius:8px;font-size:12px;max-width:440px;display:none;font-family:'Zen Kaku Gothic New',sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.4)}
 
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
   .ui{position:absolute;inset:0;pointer-events:none;z-index:10;font-size:14px}
   .ui>*{position:absolute}
   .paper{background:rgba(249,244,234,.92);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 34px rgba(24,18,12,.18);backdrop-filter:blur(5px)}
@@ -61,13 +47,11 @@
   .brand h1{font-family:'Shippori Mincho',serif;font-size:19px;font-weight:600;letter-spacing:.05em;line-height:1.15}
   .brand small{display:block;color:var(--ink2);font-size:10px;letter-spacing:.3em;text-transform:uppercase;margin-top:2px}
 
-<<<<<<< HEAD
   .objective{top:76px;left:18px;padding:11px 15px 12px;min-width:224px}
   .objective .label{font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--sakura2);margin-bottom:5px}
   .objective .text{font-family:'Shippori Mincho',serif;font-size:15px;font-weight:600}
   .charm-row{display:flex;align-items:center;gap:6px;margin-top:8px}
   .charm-count{font-size:11.5px;color:var(--ink2);margin-left:4px;letter-spacing:.04em}
-=======
   .objective{top:76px;left:18px;padding:11px 15px 12px;min-width:238px;max-width:280px}
   .objective .label{font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--sakura2);margin-bottom:5px}
   .objective .text{font-family:'Shippori Mincho',serif;font-size:14.5px;font-weight:600;line-height:1.4}
@@ -76,13 +60,11 @@
   .charm-count{font-size:11px;color:var(--ink2);margin-left:2px;letter-spacing:.03em}
   .sigil{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);font-family:'Shippori Mincho',serif;font-size:13px;color:rgba(43,37,33,.28);background:#f3ecdc}
   .sigil.lit{background:var(--sakura2);border-color:var(--sakura2);color:#fdf6ef}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
 
   .tr{top:18px;right:18px;display:flex;flex-direction:column;align-items:flex-end;gap:7px}
   .icon-btn{pointer-events:auto;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;color:var(--ink2);transition:color .15s}
   .icon-btn:hover{color:var(--sakura2)}
 
-<<<<<<< HEAD
   .hints{left:18px;bottom:18px;display:flex;gap:13px;padding:8px 13px;background:rgba(249,244,234,.8);border:1px solid var(--line);border-radius:8px;font-size:11.5px;color:var(--ink2)}
   .combo{display:flex;gap:4px;align-items:center}
   .key{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:21px;padding:0 6px;border:1px solid rgba(43,37,33,.38);border-bottom-width:2.5px;border-radius:5px;background:#fbf7ee;font-size:11px;font-weight:500;color:var(--ink)}
@@ -90,7 +72,6 @@
   .prompt{left:50%;bottom:112px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:9px 16px;animation:rise .18s ease-out}
   .prompt .key{min-width:26px;height:26px;font-size:13px}
   .mouse-hint{left:50%;bottom:74px;transform:translateX(-50%);font-size:11.5px;letter-spacing:.12em;color:rgba(247,242,231,.92);text-shadow:0 1px 6px rgba(0,0,0,.4)}
-=======
   #minimapWrap{right:18px;bottom:88px;padding:6px}
   #minimap{display:block;border-radius:8px}
 
@@ -101,7 +82,6 @@
   .prompt{left:50%;bottom:118px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:9px 16px;animation:rise .18s ease-out}
   .prompt .key{min-width:26px;height:26px;font-size:13px}
   .mouse-hint{left:50%;bottom:80px;transform:translateX(-50%);font-size:11.5px;letter-spacing:.12em;color:rgba(247,242,231,.92);text-shadow:0 1px 6px rgba(0,0,0,.45)}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
 
   .clock{right:18px;bottom:18px;display:flex;flex-direction:column;align-items:center;gap:7px;padding:11px 13px 9px}
   .dial{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(43,37,33,.45);position:relative;background:#fbf7ee}
@@ -112,7 +92,6 @@
   .dial .moon{color:#5d6b96}
   .clock .phase{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
 
-<<<<<<< HEAD
   .dialogue{left:50%;bottom:26px;transform:translateX(-50%);width:min(660px,92vw);padding:19px 22px 12px;animation:rise .18s ease-out}
   .dialogue .name{position:absolute;top:-13px;left:18px;background:var(--sakura2);color:#fdf9f0;font-size:12.5px;letter-spacing:.14em;padding:3px 14px;border-radius:6px}
   .dtext{font-family:'Shippori Mincho',serif;font-size:16.5px;line-height:1.65;min-height:56px}
@@ -146,7 +125,6 @@
   .controls-list{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:12.5px;color:var(--ink2)}
   .controls-list .row{display:flex;justify-content:space-between;align-items:center}
 
-=======
   .dialogue{left:50%;bottom:26px;transform:translateX(-50%);width:min(680px,92vw);padding:19px 22px 12px;animation:rise .18s ease-out}
   .dialogue .name{position:absolute;top:-13px;left:18px;background:var(--sakura2);color:#fdf9f0;font-size:12.5px;letter-spacing:.14em;padding:3px 14px;border-radius:6px}
   .dtext{font-family:'Shippori Mincho',serif;font-size:16px;line-height:1.65;min-height:52px}
@@ -193,13 +171,10 @@
   .pause-panel h2{font-family:'Shippori Mincho',serif;font-size:25px;font-weight:700;text-align:center}
   .pause-jp{text-align:center;font-size:11px;letter-spacing:.5em;color:var(--sakura2);margin:5px 0 20px}
   .menu{display:flex;flex-direction:column;gap:9px}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
   .btn{pointer-events:auto;cursor:pointer;font-family:'Zen Kaku Gothic New',sans-serif;font-size:14px;letter-spacing:.06em;padding:11px 18px;background:transparent;border:1.5px solid var(--ink);color:var(--ink);border-radius:8px;transition:all .15s}
   .btn:hover{background:var(--ink);color:var(--washi);transform:translateY(-1px)}
   .btn.primary{background:var(--ink);color:var(--washi)}
   .btn.primary:hover{background:var(--sakura2);border-color:var(--sakura2)}
-<<<<<<< HEAD
-=======
   .journal{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px}
   .journal h3{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--sakura2);margin-bottom:9px}
   .jq{display:flex;gap:9px;align-items:baseline;font-size:12.5px;line-height:1.5;padding:3px 0;color:var(--ink2)}
@@ -209,20 +184,15 @@
   .inv{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
   .controls-list{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;display:none;flex-direction:column;gap:8px;font-size:12.5px;color:var(--ink2)}
   .controls-list .row{display:flex;justify-content:space-between;align-items:center}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
 
   @keyframes rise{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
   @keyframes pop{0%{opacity:0;transform:translate(-50%,14px) scale(.92)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
   @keyframes blink{50%{opacity:0}}
-<<<<<<< HEAD
-=======
   @keyframes chap{0%{opacity:0}14%{opacity:1}80%{opacity:1}100%{opacity:0}}
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
 </style>
 </head>
 <body>
 <div id="root">
-<<<<<<< HEAD
   <div class="boot">
     <div class="boot-inner">
       <div class="boot-mark">桜</div>
@@ -241,7 +211,6 @@
 
 // ============================ 0 · ENGINE LOADER ======================================
 function showBootFailure(failures){
-=======
   <div class="boot"><div class="boot-inner">
     <div class="boot-mark">桜</div>
     <div class="boot-title">Sakura Village</div>
@@ -274,13 +243,11 @@ function renderSteps(done, bad){
   ).join('');
 }
 function showBootFailure(lines){
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
   const esc = (s) => String(s).replace(/</g, '&lt;');
   document.getElementById('root').innerHTML = `
     <div class="boot"><div class="boot-inner">
       <div class="boot-mark">桜</div>
       <div class="boot-title">Sakura Village</div>
-<<<<<<< HEAD
       <div class="boot-sub">could not load the 3D engine</div>
       <div class="boot-error">
         ${failures.map(f => `<div>${esc(f)}</div>`).join('')}
@@ -290,7 +257,6 @@ function showBootFailure(lines){
       </div>
       <div class="boot-tip">Try: download the file and open it directly in Chrome / Firefox / Edge,
       disable extensions for this page, then reload. (F12 → Console shows the detailed error.)</div>
-=======
       <div class="boot-sub">could not start</div>
       <div class="boot-error">
         ${lines.map(l => `<div>${esc(l)}</div>`).join('')}
@@ -299,7 +265,6 @@ function showBootFailure(lines){
       </div>
       <div class="boot-tip">If a file was copied incompletely, re-copy just that one file —
       the list above tells you which step failed.</div>
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
     </div></div>`;
 }
 const ENGINE_CDNS = [
@@ -307,7 +272,6 @@ const ENGINE_CDNS = [
   ['unpkg',    'https://unpkg.com/three@0.160.1/build/three.module.js'],
   ['esm.sh',   'https://esm.sh/three@0.160.1'],
 ];
-<<<<<<< HEAD
 async function loadThree(){
   const failures = [];
   for (let i = 0; i < ENGINE_CDNS.length; i++){
@@ -1725,7 +1689,6 @@ syncUI();
 </script>
 </body>
 </html>
-=======
 let THREE = null;
 const failures = [];
 for (const [name, url] of ENGINE_CDNS){
@@ -1784,4 +1747,3 @@ window.addEventListener('error', (e) => {
 </script>
 </body>
 </html>
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)

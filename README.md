@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# sakura-game
-=======
 # Sakura Village — The Fading Spring
 
 A browser-based 3D adventure game built with Three.js and vanilla JavaScript. Walk a Japanese village, gather charms, befriend villagers, catch fish, race Kenta around the plaza, and help the Great Sakura bloom again.
@@ -67,4 +64,3 @@ Progress auto-saves to `localStorage`. Use the Restart button in the pause menu 
 - Instanced meshes for trees, grass, petals, rain
 - Custom collider grid for physics and ray-camera blocking
 - Synthesized audio via Web Audio API (no external samples)
->>>>>>> 0a50c9c (initial commit: sakura game with full code and readme)
